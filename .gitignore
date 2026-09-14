@@ -1,0 +1,20 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java / Spring Boot
+target/
+*.class
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
