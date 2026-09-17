@@ -196,6 +196,15 @@ function App() {
 
   }, []);
 
+  useEffect(() => {
+  if (showForm && formRef.current) {
+    formRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}, [showForm]);
+
 
   // --------------------------------------------------
   // FORM INPUT CHANGE
@@ -344,15 +353,8 @@ const handleEdit = (application) => {
   });
 
   setShowForm(true);
-
-  setTimeout(() => {
-    formRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }, 100);
 };
-
+  
 
   // --------------------------------------------------
   // STATUS UPDATE
