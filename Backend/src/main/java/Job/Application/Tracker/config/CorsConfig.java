@@ -17,7 +17,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:5173")
+                        .allowedOrigins("http://localhost:5173",
+                                       "https://job-application-tracking-system-o05kp3fgk.vercel.app")
                         .allowedMethods(
                                 "GET",
                                 "POST",
